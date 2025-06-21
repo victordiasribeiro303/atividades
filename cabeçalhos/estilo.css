@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.main-wrapper {
+    display: flex;
+    width: 900px;
+    background-color: #fff6d8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.left-strip {
+    width: 100px;
+    background-image: url('img/cabecalhos_back.png');
+    background-repeat: repeat-y;
+    background-size: contain; 
+    background-position: center left;
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 30px 40px;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #906718;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #906718;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.important-note h2 {
+    background-color: #d48b00;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 5px 0;
+    
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 1.5em; 
+}
+
+.dotted-divider {
+    border: none;
+    border-bottom: 3px dashed #d48b00;
+    margin: 30px 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.important-note {
+    padding: 20px 25px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.important-note p {
+    color: #333;
+    margin-bottom: 0;
+}
