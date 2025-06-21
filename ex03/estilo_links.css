@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #000;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bloco-h2 { 
+    background-color: #7faeb7; 
+    padding: 10px 20px;
+    margin-bottom: 10px; 
+    border-left: 5px solid #7faeb7;
+}
+
+.bloco-h2 h2 { 
+    color: #000;
+    font-size: 2em;
+    margin: 0; 
+    padding: 0; 
+}
+
+p {
+    color: #000;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.link-texto {
+    color: #051962; 
+    text-decoration: none;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+}
+
+.link-texto:hover {
+    color: #ffa700; 
+    text-decoration: underline;
+}
+
+.link-texto:visited {
+    color: #0c23a1; 
+}
+
+.linha-divisoria {
+    border: none;
+    border-top: 1px solid #7faeb7; 
+    margin: 30px 0;
+}
+
+.botoes-imagens-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px; 
+    margin-bottom: 25px; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.botoes-imagens-container img {
+    height: 50px;
+    width: auto;
+    border: none;
+    vertical-align: middle;
+    transition: opacity 0.3s ease;
+}
+
+.botoes-imagens-container a {
+    display: block;
+    text-decoration: none;
+}
+
+.botoes-imagens-container a img:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .bloco-h2 h2 {
+        font-size: 1.6em;
+    }
+
+    .link-texto {
+        font-size: 1em;
+    }
+
+    .botoes-imagens-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .botoes-imagens-container img {
+        width: 100%;
+        height: auto;
+    }
+}
